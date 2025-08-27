@@ -144,6 +144,7 @@ jobs:
       - name: Build with pake-cli
         timeout-minutes: 15
         run: |
+          pwd
           node ./script/github-action-build.js
         env:
           URL: ${{ inputs.url }}
